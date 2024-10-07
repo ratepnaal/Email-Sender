@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,6 +19,9 @@
 <body>
     <div class="container mt-5">
         <h2 class="text-center"> Send your email via our website. </h2>
+     <div>
+      <h4>Current Time  <span id="currentTime"></span> </h4>
+     </div>
         <form id="emailForm" class="mt-4">
             <div class="mb-3">
                 <label for="email" class="form-label"> Email Address  </label>
@@ -27,6 +30,10 @@
             <div class="mb-3">
                 <label for="message" class="form-label"> Message </label>
                 <textarea class="form-control" id="message" rows="4" placeholder="Enter Your Message" required></textarea>
+            </div>
+            <div class="mb-3">
+              <label for="time"  class="from-label"> Time Send The Message </label>
+              <input type="time" id="time" class="form-control" required />
             </div>
             <button type="submit" class="btn btn-primary">Send Message </button>
         </form>
